@@ -1,0 +1,9 @@
+.git
+.private
+.connection
+access
+lab-work
+.uploads
+*.zip
+**/__pycache__
+**/*.pyc

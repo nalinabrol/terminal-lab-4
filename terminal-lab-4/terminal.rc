@@ -1,0 +1,8 @@
+# Loaded only by terminal.sh; does not edit any user's shell or SSH configuration.
+ssh() { command ssh -F "$LAB4_SSH_CONFIG" "$@"; }
+scp() { command scp -F "$LAB4_SSH_CONFIG" "$@"; }
+check_lab() { python3 -B "$LAB4_CHECKER" "$@"; }
+# Keep macOS resource-fork sidecars out of this text-only exercise's tar archive.
+export COPYFILE_DISABLE=1
+unset HISTFILE
+PS1='[Lab 4 Codespace] \u@\h:\w\$ '

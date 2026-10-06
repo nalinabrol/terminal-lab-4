@@ -1,0 +1,9 @@
+.connection/
+.private/
+access/
+lab-work/
+__pycache__/
+*.pyc
+*.zip
+.uploads/*
+!.uploads/README.md

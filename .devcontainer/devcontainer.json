@@ -1,0 +1,17 @@
+{
+  "name": "Lab 4 - File permissions and SSH",
+  "build": {"dockerfile": "Dockerfile", "context": ".."},
+  "remoteUser": "vscode",
+  "containerEnv": {"SHELL": "/bin/bash"},
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "workbench.startupEditor": "none",
+        "chat.disableAIFeatures": true,
+        "github.copilot.enable": {"*": false}
+      }
+    }
+  },
+  "postCreateCommand": "bash scripts/verify_environment.sh"
+}
