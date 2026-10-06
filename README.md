@@ -1,5 +1,7 @@
 # Start Lab 4 in your browser
 
+[Open Lab 4 in Codespaces](https://codespaces.new/nalinabrol/terminal-lab-4?quickstart=1)
+
 Use the class Codespaces link from your instructor's email. Sign in with **your own GitHub account** and create or resume your own Lab 4 Codespace. The lab runs in its Linux terminal on Windows, Mac and Linux laptops.
 
 ## Start
