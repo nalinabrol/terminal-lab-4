@@ -10,6 +10,8 @@ Connect to the lab server, change file permissions and transfer a project betwee
 
 ## Get ready
 
+[**Open Lab 4 in GitHub Codespaces**](https://codespaces.new/nalinabrol/terminal-lab-4?quickstart=1)
+
 You will use two Linux machines: your Codespace and the lab server. Your laptop's browser displays the Codespace terminal; the commands run in the Codespace.
 
 - **Local terminal:** commands run in your Codespace.
@@ -17,13 +19,18 @@ You will use two Linux machines: your Codespace and the lab server. Your laptop'
 
 Use `exit` to end an SSH session and return to the Codespace terminal. Your physical laptop is only used to open the browser and download your final report.
 
-Follow the [setup instructions](README.md): open your own Codespace from the emailed class link, upload your personal access ZIP into `.uploads` without extracting it, and run this at the repository root:
+1. Open the **Lab 4 in GitHub Codespaces** link above, sign in with **your own GitHub account**, and create your own Codespace or resume your existing Lab 4 Codespace. Wait for the browser editor to load.
+2. Download your personal `Lab_4_studentNN_Access.zip` from your instructor's email. Keep it zipped and private; it contains your personal SSH key.
+3. In the Codespace Explorer, right-click `.uploads`, choose **Upload**, and upload only your own ZIP without extracting it.
+4. Choose **Terminal > New Terminal**. At the repository root, run:
 
-```bash
-bash start_lab.sh
-```
+   ```bash
+   bash start_lab.sh
+   ```
 
-Enter your roll number when asked. Setup prepares your Codespace and server folders, then opens the lab Bash terminal in your local lab folder. Inside this terminal, `lab-server` connects to your assigned account. Your roll number names your folders; it does not select an account or key.
+5. Enter your roll number when asked. Begin Experiment 1 after setup opens the lab Bash terminal.
+
+Setup prepares your Codespace and server folders, then opens the lab Bash terminal in your local lab folder. Inside this terminal, `ssh lab-server` connects to your assigned account. Your roll number names your folders; it does not select an account or key. You do not need to install Python or SSH tools on your laptop. If setup fails, see the [troubleshooting instructions](https://github.com/nalinabrol/terminal-lab-4#readme).
 
 The examples use roll number **2026001**. Replace it with your own roll number in every command and path. Use the same Bash commands on Windows, Mac and Linux laptops.
 
